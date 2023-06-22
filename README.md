@@ -1,6 +1,7 @@
 Welcome to the CloudWalk challenge repository.
 
 To solve the proposed challenges, I used the Python language, the matplotlib, seaborn and sqlite3 libraries.
+The development environment for resolve this challange is Jupyter notebook.
 
 In the repository, follow the challenge files.
 
