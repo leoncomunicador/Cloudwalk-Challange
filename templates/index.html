@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction Monitoring</title>
+</head>
+<body>
+    <h1>Transaction Monitoring</h1>
+    {% if alerts %}
+        <h2>Alerts:</h2>
+        <ul>
+        {% for alert in alerts %}
+            <li>{{ alert }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No alerts at the moment.</p>
+    {% endif %}
+
+    <h2>Transaction Data:</h2>
+    <img src="{{ url_for('static', filename='transaction_plot.png') }}" alt="Transaction Plot">
+</body>
+</html>
